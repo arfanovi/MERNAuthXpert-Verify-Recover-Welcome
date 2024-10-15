@@ -103,3 +103,102 @@ body {
     background-color: #007bff; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+
+
+
+
+
+
+
+
+/* Signin  */
+
+/* signin.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.signin-container {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 2rem; /* Padding inside the container */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.signin-container:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+}
+
+.signin-title {
+    text-align: center; /* Center title */
+    font-size: 1.8rem; /* Title size */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.input-field {
+    width: 100%; /* Full width */
+    padding: 0.75rem; /* Padding */
+    margin-bottom: 1rem; /* Space between inputs */
+    border: 1px solid #d1d5db; /* Light border */
+    border-radius: 4px; /* Rounded input */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.input-field:focus {
+    border-color: #4f46e5; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5); /* Glow effect */
+}
+
+.signin-button {
+    width: 100%; /* Full width */
+    padding: 0.75rem; /* Button padding */
+    background-color: #4f46e5; /* Button color */
+    color: #ffffff; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Animation */
+}
+
+.signin-button:hover {
+    background-color: #4338ca; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.error-message {
+    color: #ef4444; /* Red color for error */
+    margin-top: 1rem; /* Space above error message */
+    text-align: center; /* Centered text */
+}
+
+.success-message {
+    color: #16a34a; /* Green color for success */
+    margin-top: 1rem; /* Space above success message */
+    text-align: center; /* Centered text */
+}
+
+.link-text {
+    text-align: center; /* Centered text */
+    margin-top: 1rem; /* Space above */
+}
+
+.link {
+    color: #4f46e5; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

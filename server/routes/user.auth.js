@@ -1,11 +1,11 @@
-const express = require("express");
+const express = require('express');
+const { signup, signin, resetPassword, confirmResetPassword } = require('../controllers/user.controller');
+
 const router = express.Router();
-// const User = require("../models/User");
 
-const { signup } = require("../controllers/user.controller");
-
-
-router.post("/signup", signup);
-// router.post("/login", login);
+router.post('/signup', signup);
+router.post('/signin', signin);
+router.post('/reset-password', resetPassword); // Request password reset
+router.post('/reset-password/:token', confirmResetPassword); // Confirm password reset
 
 module.exports = router;

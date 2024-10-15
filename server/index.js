@@ -1,20 +1,22 @@
 const express = require("express");
 const app = express();
 const PORT = 5000;
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 const router = require('./routes/user.auth')
 
 // Connection DB 
 const connectDB = require('./Database/DB')
 connectDB()
 
-const cors = require('cors')
-app.use(cors())
+const cors = require('cors');
+app.use(cors({ origin: 'http://localhost:3000' })); // Only allows requests from the frontend
+
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
-// parse application/json
-app.use(bodyParser.json())
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 
 
 // Routes 
