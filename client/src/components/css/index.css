@@ -1,0 +1,105 @@
+/* src/index.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
+}
+
+
+/* Add this to your existing CSS */
+
+.signup-input {
+    position: relative; /* Set position relative for icon positioning */
+    padding-left: 40px; /* Space for the icon */
+}
+
+/* Style for the icon */
+.signup-icon {
+    position: absolute; /* Position the icon */
+    left: 10px; /* Space from the left */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    color: #fff; /* Icon color */
+}
+
+
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.signup-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.signup-label {
+    font-size: 1rem;
+    margin: 10px 0 5px; /* Space between label and input */
+    color: #fff; /* White text color */
+}
+
+.signup-input {
+    width: 300px; /* Fixed width for inputs */
+    padding: 12px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below input */
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.signup-input:focus {
+    border-color: #00f2fe; /* Change border color on focus */
+    background: rgba(255, 255, 255, 0.2); /* Change background on focus */
+    outline: none; /* Remove default outline */
+}
+
+.signup-button {
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #00f2fe; /* Blue background */
+    color: white; /* White text color */
+    font-size: 1rem;
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    animation: bounce 1s infinite; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Bounce effect */
+    }
+    60% {
+        transform: translateY(-5px); /* Bounce effect */
+    }
+}
+
+.signup-button:hover {
+    background-color: #007bff; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
